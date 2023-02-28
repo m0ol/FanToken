@@ -1,0 +1,20 @@
+
+Para salvar a imagem docker
+--------------------------
+https://docs.docker.com/engine/reference/commandline/commit/
+
+$ docker ps
+$ docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]
+
+Exemplo
+$ docker commit c3f279d17e0a  pucmg/dapps/aula01:1.0
+
+Para remover imagens não associadas a um container
+--------------------------------------------------
+!!! CUIDADO !!!
+$ docker image prune -a
+
+Para remover todos containers parados
+-------------------------------------
+$ docker ps -a
+$ docker container prune

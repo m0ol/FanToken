@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+  pucmg-aula05:
+    container_name: pucmg-aula05
+    build:
+      context: .
+      dockerfile: dockerfile.aula05
+    ports:
+      - "7545:7545"
+      - "9545:9545"
+      - "3000:3000"
+    volumes:
+      - ../../data:/pucmg
+      - ../../db/ganache:/pucmg/db/ganache    
+    tty: true

@@ -1,0 +1,5 @@
+FROM pucmg/dapps/aula04:1.0
+
+WORKDIR /pucmg
+
+CMD /bin/bash
